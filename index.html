@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #blue;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+       .header {
+            background-color: #blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+       .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+       .product {
+            width: 300px;
+            height: 400px;
+            background-color: #white;
+            color: #blue;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+       .footer {
+            background-color: #blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+       .contact-form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+       .contact-form input,.contact-form textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Denton Plant Factory</h1>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="plant1.jpg" alt="Plant 1" width="300" height="200">
+            <p>Plant 1 is a beautiful plant from the Amazon rainforest. It requires a lot of water and sunlight.</p>
+        </div>
+        <div class="product">
+            <img src="plant2.jpg" alt="Plant 2" width="300" height="200">
+            <p>Plant 2 is a hardy plant from the desert. It requires very little water and can survive in harsh conditions.</p>
+        </div>
+        <!-- More products here -->
+    </div>
+    <div class="footer">
+        <p>Copyright © 2022 Denton Plant Factory</p>
+        <div class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Full Name">
+            <input type="tel" id="contact-number" name="contact-number" placeholder="Contact Number">
+            <input type="email" id="email" name="email" placeholder="Email Address">
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
